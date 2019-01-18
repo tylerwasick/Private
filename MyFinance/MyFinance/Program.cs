@@ -12,10 +12,40 @@ namespace MyFinance
         {
             // The code provided will print ‘Hello World’ to the console.
             // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
+            MainMenu();
             Console.ReadKey();
 
             // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
         }
+
+        // Print the Main Menu
+        private static void MainMenu()
+        {
+            MenuLine();
+            MenuOptions();
+            MenuLine();
+            Console.WriteLine();
+        }
+
+        private static void MenuLine()
+        {
+            for (int i = 0; i < 119; i++)
+            {
+                Console.Write("*");
+            }
+            //Console.WriteLine();
+        }
+
+        private static void MenuOptions()
+        {
+            Console.WriteLine();
+            for (int i = 0; i < 22; i++)
+            {
+                Console.WriteLine("*");
+            }
+            //Console.WriteLine();
+        }
+
     }
+
 }
